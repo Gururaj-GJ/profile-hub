@@ -1,7 +1,24 @@
 const items = [
-  "Next.js / React","TypeScript / Node.js","Tailwind CSS / UI",
-  "Python / Pandas / scikit-learn","REST APIs / Webhooks",
-  "Vercel / Netlify / GitHub Actions",
+  "Fraud Risk Management",
+  "AML/KYC Compliance",
+  "Transaction Monitoring",
+  "Merchant Risk Analysis",
+  "Payment Fraud Prevention",
+  "Chargeback Management",
+  "Regulatory Compliance",
+  "PCI DSS Awareness",
+  "Financial Crime Risk Management",
+  "SQL Query Development",
+  "Microsoft Excel (Advanced)",
+  "SharePoint Administration",
+  "Google Data Studio",
+  "Process Automation (Macros, Apps Script)",
+  "AI Prompt Engineering",
+  "Cross-functional Collaboration",
+  "Law Enforcement Coordination",
+  "Process Improvement",
+  "Training & Knowledge Transfer",
+  "Stakeholder Management",
 ];
 
 export default function Skills() {
