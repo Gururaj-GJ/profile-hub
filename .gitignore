@@ -1,0 +1,250 @@
+# ==========================================
+# .gitignore - Professional Portfolio
+# Fraud & Risk Specialist Portfolio
+# ==========================================
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.sublime-workspace
+*.sublime-project
+.eslintignore
+
+# Node.js & NPM
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+package-lock.json
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+
+# Build & Distribution
+dist/
+build/
+.nuxt/
+.next/
+out/
+.cache/
+coverage/
+
+# Dependencies
+bower_components/
+vendor/
+.bundle/
+
+# Temporary Files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.#*
+\#*\#
+*.log
+logs/
+*.pid
+*.seed
+
+# OS Specific
+.AppleDouble
+.LSOverride
+._*
+*.cab
+*.msi
+*.msix
+*.mspack
+*.exe
+*.com
+*.bat
+*.cmd
+*.sh
+
+# IDE Specific
+.vscode/settings.json
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/tasks.json
+.idea/
+.idea_modules/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.project
+*.pydevproject
+.settings/
+
+# Testing
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mocha_output
+test-results/
+test-reports/
+
+# Deployment & CI/CD
+.vercel
+.netlify
+.firebase
+.env.*.local
+.env.production
+
+# Local Development
+.local/
+.venv/
+venv/
+env/
+ENV/
+
+# Package Managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+lerna.json
+
+# Misc
+.history/
+.vscode-settings.json
+.vscode/settings.json
+.todo
+.notes
+DEBUG
+.debug
+*.pem
+*.key
+private/
+
+# Sensitive Information
+# Never commit sensitive data
+credentials.json
+secret.json
+.env.local
+.env.*.local
+secrets/
+
+# Backup Files
+*.backup
+*.bak
+*.old
+*~
+.backup/
+
+# Git Specific
+.git/
+.gitattributes
+.gitmodules
+
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+site/
+.mkdocs.yml.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Archives
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+*.jar
+*.war
+*.ear
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# Visual Studio
+.vs/
+.vsconfig
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Keep Important Files
+# You can use negated patterns if needed:
+# !important-file.txt
+# !directory/important-file.txt
+
+# Don't ignore these files
+!.gitkeep
+!.github/
+!.editorconfig
+!.prettierrc
+!.eslintrc
+
+# ==========================================
+# End of .gitignore
+# ==========================================
