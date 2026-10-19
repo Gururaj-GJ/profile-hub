@@ -1,96 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Portfolio of Gururaj G J — fraud investigation, transaction laundering, merchant risk, AML/KYC and trust & safety professional, and builder of open-source fraud-intelligence tooling.">
-<meta name="keywords" content="Fraud Investigation, Transaction Laundering, Merchant Risk, AML, KYC, Trust and Safety, Financial Crime, Bengaluru">
 <meta name="author" content="Gururaj G J">
+<meta name="theme-color" content="#05080f">
+<meta property="og:title" content="Gururaj G J — Fraud Investigation & Financial Crime">
+<meta property="og:description" content="Fraud investigation and financial-crime professional with 6+ years across transaction-laundering detection, merchant risk, AML/KYC and trust & safety.">
+<meta property="og:type" content="website">
 <title>Gururaj G J — Fraud Investigation &amp; Financial Crime</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070b14'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='bold' fill='%2338bdf8' text-anchor='middle'%3EGJ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
-<nav class="nav">
+<div class="progress" id="progress"></div>
+
+<div class="aurora" aria-hidden="true">
+  <span class="a1"></span><span class="a2"></span><span class="a3"></span>
+  <div class="grid-overlay"></div>
+</div>
+
+<nav class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="#" class="nav-brand">Gururaj <span>G J</span></a>
-    <ul class="nav-links">
+    <a href="#top" class="brand">
+      <span class="brand-mark">GJ</span>
+      <span class="brand-text">Gururaj <em>G J</em></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#cases">Case Studies</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="https://github.com/Gururaj-GJ" target="_blank" rel="noopener">GitHub</a>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm nav-gh" href="https://github.com/Gururaj-GJ" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.6 4.7 18.6 5 18.6 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+        GitHub
+      </a>
+      <button class="icon-btn nav-burger" id="navToggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
   </div>
 </nav>
 
 <header class="hero">
-  <div class="container">
-    <div class="hero-label">Fraud Investigation · Financial Crime · Trust &amp; Safety</div>
-    <h1>Gururaj G J</h1>
-    <div class="hero-pillars">
-      <span><em>Investigator.</em></span>
-      <span><em>Builder.</em></span>
-      <span><em>Fraud Intelligence.</em></span>
+  <div class="container hero-inner">
+    <div class="hero-badge" data-reveal>
+      <span class="pulse"></span> Open to fraud investigation roles · Bengaluru
     </div>
-    <p>
+    <h1 data-reveal>Gururaj G J</h1>
+    <div class="hero-role" data-reveal>
+      <span class="role-prefix">Specialising in</span>
+      <span class="role-rotator" id="roleRotator" aria-live="polite"></span>
+    </div>
+    <p class="hero-lead" data-reveal>
       Fraud investigation and financial-crime professional with 6+ years across transaction-laundering
-      detection, merchant risk, payment fraud, AML/KYC and trust &amp; safety — and the engineer behind
-      an open-source fraud-intelligence toolset.
+      detection, merchant risk, payment fraud, AML/KYC and trust &amp; safety — and the engineer behind an
+      open-source fraud-intelligence toolset.
     </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">View Projects</a>
-      <a class="btn btn-secondary" href="Gururaj-GJ-Resume.pdf" download>Download Resume</a>
-      <a class="btn btn-secondary" href="https://www.linkedin.com/in/gururaj-gj-52a062b4" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="hero-cta" data-reveal>
+      <a class="btn btn-primary" href="#projects">Explore Projects</a>
+      <a class="btn btn-ghost" href="Gururaj-GJ-Resume.pdf" download>Download Resume</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/gururaj-gj-52a062b4" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="marquee" data-reveal aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack"></div>
     </div>
   </div>
 </header>
 
 <div class="container">
-  <div class="stats">
-    <div class="stat"><div class="stat-value">6+</div><div class="stat-label">Years in fraud &amp; risk</div></div>
-    <div class="stat"><div class="stat-value">9</div><div class="stat-label">Payment networks investigated</div></div>
-    <div class="stat"><div class="stat-value">11</div><div class="stat-label">Open-source repositories</div></div>
-    <div class="stat"><div class="stat-value">2</div><div class="stat-label">Decision engines built</div></div>
-    <div class="stat"><div class="stat-value">MIT</div><div class="stat-label">Open-source licence</div></div>
+  <div class="stats" data-reveal>
+    <div class="stat"><div class="stat-value" data-count="6" data-suffix="+">6+</div><div class="stat-label">Years in fraud &amp; risk</div></div>
+    <div class="stat"><div class="stat-value" data-count="9">9</div><div class="stat-label">Payment networks investigated</div></div>
+    <div class="stat"><div class="stat-value" data-count="11">11</div><div class="stat-label">Open-source repositories</div></div>
+    <div class="stat"><div class="stat-value" data-count="34">34</div><div class="stat-label">Fraud signals engineered</div></div>
+    <div class="stat"><div class="stat-value" data-count="2">2</div><div class="stat-label">Decision engines built</div></div>
   </div>
 </div>
 
-<section id="about">
+<section id="about" class="section">
   <div class="container">
-    <h2>About</h2>
-    <p class="section-sub">An investigator who also builds the tooling.</p>
-    <div class="why-box">
-      I investigate fraud — and I build the explainable tooling that helps investigations scale. My core
-      experience comes from <strong>G2 Risk Solutions (Fintellix)</strong>, where I ran multi-layered
-      transaction-laundering and prohibited-merchant investigations across nine payment networks. Before
-      that I investigated cloud-account fraud at <strong>Amazon Web Services</strong>, ran regulatory-compliance
-      and sanctions/PEP screening reviews for <strong>Google</strong>'s digital payments at Accenture, and handled
-      buyer-side payment fraud at <strong>Flipkart</strong>. Every component I build is designed to be
-      transparent, auditable and explainable, with the evidence behind each decision shown to the investigator.
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">01 — About</span>
+      <h2>An investigator who also builds the tooling</h2>
+      <p class="section-sub">Six years in fraud, risk and financial crime; the systems to match.</p>
     </div>
-    <p style="margin-top:1.75rem; font-size:0.85rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em;">Currently focused on</p>
-    <div class="building">
-      <span class="building-badge"><span class="dot"></span> Fraud Investigation</span>
-      <span class="building-badge"><span class="dot"></span> Transaction Laundering</span>
-      <span class="building-badge"><span class="dot"></span> Merchant Risk</span>
-      <span class="building-badge"><span class="dot"></span> AML / KYC</span>
-      <span class="building-badge"><span class="dot"></span> Trust &amp; Safety</span>
+    <div class="about-grid">
+      <div class="glass about-main" data-reveal>
+        <p>
+          I investigate fraud — and I build the explainable tooling that helps investigations scale. My core
+          experience comes from <strong>G2 Risk Solutions (Fintellix)</strong>, where I ran multi-layered
+          transaction-laundering and prohibited-merchant investigations across nine payment networks.
+        </p>
+        <p>
+          Before that I investigated cloud-account fraud at <strong>Amazon Web Services</strong>, ran
+          regulatory-compliance and sanctions/PEP screening reviews for <strong>Google</strong>'s digital
+          payments at Accenture, and handled buyer-side payment fraud at <strong>Flipkart</strong>.
+        </p>
+        <p>
+          Every component I build is designed to be transparent, auditable and explainable, with the evidence
+          behind each decision shown to the investigator.
+        </p>
+      </div>
+      <div class="about-side">
+        <div class="glass focus-card" data-reveal>
+          <h3>Currently focused on</h3>
+          <div class="chips">
+            <span>Fraud Investigation</span><span>Transaction Laundering</span><span>Merchant Risk</span>
+            <span>AML / KYC</span><span>Trust &amp; Safety</span>
+          </div>
+        </div>
+        <div class="glass focus-card" data-reveal>
+          <h3>Availability</h3>
+          <ul class="mini-list">
+            <li><span class="dot-ok"></span> Available immediately</li>
+            <li><span class="dot-ok"></span> Bengaluru · hybrid or onsite</li>
+            <li><span class="dot-ok"></span> Full-time</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="skills" style="background:#090e18;">
+<section id="skills" class="section alt">
   <div class="container">
-    <h2>Core Skills &amp; Expertise</h2>
-    <p class="section-sub">Grouped by discipline, so it is easy to scan.</p>
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">02 — Capabilities</span>
+      <h2>Core skills &amp; expertise</h2>
+      <p class="section-sub">Grouped by discipline, so it is easy to scan.</p>
+    </div>
     <div class="skill-grid">
-      <div class="skill-card">
+      <div class="glass skill-card" data-reveal>
+        <div class="skill-icon">◈</div>
         <h3>Fraud &amp; Merchant Risk</h3>
         <ul>
           <li>Transaction laundering detection</li>
@@ -101,7 +155,8 @@
           <li>Payment fraud — cards, UPI, wallets, gift cards</li>
         </ul>
       </div>
-      <div class="skill-card">
+      <div class="glass skill-card" data-reveal>
+        <div class="skill-icon">◈</div>
         <h3>AML / Financial Crime</h3>
         <ul>
           <li>AML investigation</li>
@@ -112,7 +167,8 @@
           <li>Alert review &amp; disposition</li>
         </ul>
       </div>
-      <div class="skill-card">
+      <div class="glass skill-card" data-reveal>
+        <div class="skill-icon">◈</div>
         <h3>Trust &amp; Safety</h3>
         <ul>
           <li>Account takeover (ATO)</li>
@@ -123,7 +179,8 @@
           <li>Policy enforcement</li>
         </ul>
       </div>
-      <div class="skill-card">
+      <div class="glass skill-card" data-reveal>
+        <div class="skill-icon">◈</div>
         <h3>Fraud Intelligence Engineering</h3>
         <ul>
           <li>Deterministic signal design</li>
@@ -134,7 +191,8 @@
           <li>OSINT &amp; evidence handling</li>
         </ul>
       </div>
-      <div class="skill-card">
+      <div class="glass skill-card" data-reveal>
+        <div class="skill-icon">◈</div>
         <h3>Technical</h3>
         <ul>
           <li>Python · SQL · JavaScript · Kotlin</li>
@@ -148,14 +206,17 @@
   </div>
 </section>
 
-<section id="experience">
+<section id="experience" class="section">
   <div class="container">
-    <h2>Professional Experience</h2>
-    <p class="section-sub">Six years across fraud, risk and financial crime.</p>
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">03 — Track record</span>
+      <h2>Professional experience</h2>
+      <p class="section-sub">Six years across fraud, risk and financial crime.</p>
+    </div>
     <div class="timeline">
-
-      <div class="xp">
-        <div class="xp-top">
+      <article class="xp" data-reveal>
+        <div class="xp-dot"></div>
+        <div class="xp-head">
           <h3>Senior Analyst — Transaction Laundering Detection | Merchant Risk</h3>
           <span class="when">Feb 2024 – Aug 2025</span>
         </div>
@@ -168,10 +229,11 @@
           <li>Developed AI-assisted investigation workflows that reduced merchant website assessment time while improving consistency and evidence quality.</li>
         </ul>
         <div class="chips"><span>Transaction Laundering</span><span>Merchant Risk</span><span>Card Schemes</span><span>SharePoint</span><span>OSINT</span></div>
-      </div>
+      </article>
 
-      <div class="xp">
-        <div class="xp-top">
+      <article class="xp" data-reveal>
+        <div class="xp-dot"></div>
+        <div class="xp-head">
           <h3>Risk Specialist I — AWS Fraud Investigations</h3>
           <span class="when">Aug 2022 – May 2023</span>
         </div>
@@ -182,10 +244,11 @@
           <li>Promoted from Sr. Investigation Specialist to Risk Specialist I within four months of joining, for investigation quality and consistent performance.</li>
         </ul>
         <div class="chips"><span>Account Takeover</span><span>Fraud Rings</span><span>Risk Scoring</span><span>Case Management</span></div>
-      </div>
+      </article>
 
-      <div class="xp">
-        <div class="xp-top">
+      <article class="xp" data-reveal>
+        <div class="xp-dot"></div>
+        <div class="xp-head">
           <h3>Senior Process Associate — Regulatory Compliance (Google Operations)</h3>
           <span class="when">Mar 2021 – Aug 2022</span>
         </div>
@@ -196,10 +259,11 @@
           <li>Built a knowledge hub consolidating SOPs, tools and escalation links, and designed dashboards tracking team productivity and investigation metrics.</li>
         </ul>
         <div class="chips"><span>Sanctions &amp; PEP</span><span>Gift Cards</span><span>Regulatory Compliance</span><span>Dashboards</span></div>
-      </div>
+      </article>
 
-      <div class="xp">
-        <div class="xp-top">
+      <article class="xp" data-reveal>
+        <div class="xp-dot"></div>
+        <div class="xp-head">
           <h3>Executive — Fraud Investigation | Payment Risk</h3>
           <span class="when">Aug 2018 – Mar 2021</span>
         </div>
@@ -210,10 +274,11 @@
           <li>Coordinated with banks, cybercrime teams and law enforcement on escalations.</li>
         </ul>
         <div class="chips"><span>Payment Fraud</span><span>Chargebacks</span><span>UPI</span><span>Escalations</span></div>
-      </div>
+      </article>
 
-      <div class="xp">
-        <div class="xp-top">
+      <article class="xp xp-muted" data-reveal>
+        <div class="xp-dot"></div>
+        <div class="xp-head">
           <h3>Customer Success Manager</h3>
           <span class="when">Aug 2026 – Oct 2026</span>
         </div>
@@ -222,199 +287,202 @@
           <li>Short-term operational role in an employee-health-benefits (InsurTech) company, covering customer-success and service-operations across inbound, outbound, email, chat and ticketing channels.</li>
           <li>Left to return to fraud investigation and financial-crime work — my chosen career focus.</li>
         </ul>
-        <div class="chips"><span>Operations</span><span>Service Quality</span><span>Automation</span></div>
-      </div>
-
+      </article>
     </div>
   </div>
 </section>
 
-<section id="projects" style="background:#090e18;">
+<section id="projects" class="section alt">
   <div class="container">
-    <h2>Projects</h2>
-    <p class="section-sub">Open-source fraud-intelligence tooling — decision engines, investigation tools and device risk.</p>
-    <div class="projects-grid">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">04 — Build</span>
+      <h2>Projects</h2>
+      <p class="section-sub">Open-source fraud-intelligence tooling — decision engines, investigation tools and device risk.</p>
+    </div>
 
-      <div class="project-card">
-        <div class="project-thumb thumb-engine">
-          <div class="thumb-content">
-            <div class="thumb-icon">🧠</div>
-            <div class="thumb-title">Decision Engine</div>
-          </div>
+    <div class="filters" data-reveal>
+      <button class="filter is-active" data-filter="all">All</button>
+      <button class="filter" data-filter="decisioning">Decisioning</button>
+      <button class="filter" data-filter="investigation">Investigation</button>
+      <button class="filter" data-filter="operations">Operations</button>
+      <button class="filter" data-filter="intelligence">Intelligence</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <article class="project-card" data-cat="decisioning" data-reveal>
+        <div class="thumb thumb-abstract" data-mono="DS">
+          <span class="thumb-glow"></span>
         </div>
         <div class="project-body">
+          <div class="project-tags"><span>Decisioning</span><span>Python · FastAPI</span></div>
           <h3>Deterministic Fraud Signal Engine</h3>
           <p>Explainable fraud decisioning across 34 signals in seven categories and seven rule packs. Returns ALLOW / REVIEW / BLOCK with the triggered signals, evidence and an investigator narrative.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/deterministic-fraud-signal-engine" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/deterministic-fraud-signal-engine" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: url('screenshots/investigation-canvas.jpg') center/cover; height:180px;"></div>
+      <article class="project-card" data-cat="investigation" data-reveal>
+        <div class="thumb" style="background-image:url('screenshots/investigation-canvas.jpg')"></div>
         <div class="project-body">
+          <div class="project-tags"><span>Investigation</span><span>Graph analysis</span></div>
           <h3>Fraud Investigation Canvas</h3>
           <p>Browser-based investigator console with an interactive entity-relationship graph, multi-ring detection, entity resolution and a SHA-256 evidence locker with an append-only audit trail.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/fraud-investigation-canvas" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/fraud-investigation-canvas" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb thumb-agent">
-          <div class="thumb-content">
-            <div class="thumb-icon">🤖</div>
-            <div class="thumb-title">AI Risk</div>
-          </div>
+      <article class="project-card" data-cat="decisioning" data-reveal>
+        <div class="thumb thumb-abstract" data-mono="AI">
+          <span class="thumb-glow"></span>
         </div>
         <div class="project-body">
+          <div class="project-tags"><span>Decisioning</span><span>AI governance</span></div>
           <h3>AI Agent Risk Evaluation Suite</h3>
           <p>A 20-signal deterministic engine scoring fraud, delegation and liability risk in autonomous AI agents, across identity, behavioural, coordination and financial risk.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/ai-agent-risk-evaluation-suite" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/ai-agent-risk-evaluation-suite" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: url('screenshots/device-sdk.jpg') center/cover; height:180px;"></div>
+      <article class="project-card" data-cat="intelligence" data-reveal>
+        <div class="thumb" style="background-image:url('screenshots/device-sdk.jpg')"></div>
         <div class="project-body">
+          <div class="project-tags"><span>Intelligence</span><span>Kotlin · Android</span></div>
           <h3>Android Device Risk SDK</h3>
           <p>Kotlin/Gradle SDK implementing nine device-risk signals with a FastAPI backend, built for KYC and loan-disbursal risk checks at lenders and BNPL providers.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/android-device-risk-sdk" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/android-device-risk-sdk" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: url('screenshots/ato-standard.jpg') center/cover; height:180px;"></div>
+      <article class="project-card" data-cat="investigation" data-reveal>
+        <div class="thumb" style="background-image:url('screenshots/ato-standard.jpg')"></div>
         <div class="project-body">
+          <div class="project-tags"><span>Investigation</span><span>ATO</span></div>
           <h3>ATO Investigation Standard</h3>
           <p>A structured account-takeover investigation methodology that reconstructs the full attack chain from signals through to monetisation, with explainable playbooks.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/ato-investigation-standard" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/ato-investigation-standard" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: url('screenshots/emergency-lock.jpg') center/cover; height:180px;"></div>
+      <article class="project-card" data-cat="operations" data-reveal>
+        <div class="thumb" style="background-image:url('screenshots/emergency-lock.jpg')"></div>
         <div class="project-body">
+          <div class="project-tags"><span>Operations</span><span>Controls</span></div>
           <h3>Emergency Outflow Lock</h3>
           <p>A decision layer defining when to lock outflows on a compromised account, what to restrict and why — with a full audit lifecycle.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/emergency-outflow-lock" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/emergency-outflow-lock" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: url('screenshots/dashboard.jpg') center/cover; height:180px;"></div>
+      <article class="project-card" data-cat="operations" data-reveal>
+        <div class="thumb" style="background-image:url('screenshots/dashboard.jpg')"></div>
         <div class="project-body">
+          <div class="project-tags"><span>Operations</span><span>Analytics</span></div>
           <h3>Fraud Analytics Dashboard</h3>
           <p>Operational monitoring interface for fraud losses, detection rates, alert queues and case investigation workflows.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/fraud-analytics-dashboard-demo" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/fraud-analytics-dashboard-demo" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: url('screenshots/regulator-library.jpg') center/cover; height:180px;"></div>
+      <article class="project-card" data-cat="intelligence" data-reveal>
+        <div class="thumb" style="background-image:url('screenshots/regulator-library.jpg')"></div>
         <div class="project-body">
+          <div class="project-tags"><span>Intelligence</span><span>RegTech</span></div>
           <h3>Regulator Intelligence Library</h3>
           <p>Multi-jurisdiction regulatory change tracking with priority scoring, rollout phases and client applicability mapping.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/regulator-intelligence-library" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/regulator-intelligence-library" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-thumb thumb-zic">
-          <div class="thumb-content">
-            <div class="thumb-icon">⚙️</div>
-            <div class="thumb-title">Risk Architecture</div>
-          </div>
+      <article class="project-card" data-cat="decisioning" data-reveal>
+        <div class="thumb thumb-abstract" data-mono="ZIC">
+          <span class="thumb-glow"></span>
         </div>
         <div class="project-body">
+          <div class="project-tags"><span>Decisioning</span><span>Risk architecture</span></div>
           <h3>ZIC Decision Engine</h3>
           <p>A deterministic risk-decision engine for structured, explainable decisioning with transparent governance and scoring.</p>
           <div class="project-links">
-            <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ-G/zic-decision-engine" target="_blank" rel="noopener">Repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ-G/zic-decision-engine" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </div>
+      </article>
 
     </div>
   </div>
 </section>
 
-<section id="case-studies">
+<section id="cases" class="section">
   <div class="container">
-    <h2>Real-World Case Studies &amp; Publications</h2>
-    <p class="section-sub">Investigations and write-ups.</p>
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">05 — Evidence</span>
+      <h2>Real-world case studies &amp; publications</h2>
+      <p class="section-sub">Investigations and write-ups.</p>
+    </div>
     <div class="pub-grid">
-
-      <div class="pub-card">
+      <article class="glass pub-card" data-reveal>
         <h3>Loan App Malware Investigation</h3>
         <p>A 9-day incident response and Android forensics teardown of a predatory loan app — permissions abuse, data-exfiltration pathways and harassment-enabling behaviour, with indicator-of-compromise mapping and forensic evidence packaging.</p>
-        <div class="tag-row"><span>Android Forensics</span><span>ADB</span><span>Incident Response</span></div>
-        <div class="project-links" style="margin-top:1rem;">
-          <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ/loan-app-malware-investigation" target="_blank" rel="noopener">Case Study</a>
-        </div>
-      </div>
-
-      <div class="pub-card">
+        <div class="chips"><span>Android Forensics</span><span>ADB</span><span>Incident Response</span></div>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ/loan-app-malware-investigation" target="_blank" rel="noopener">Case study</a>
+      </article>
+      <article class="glass pub-card" data-reveal>
         <h3>Fraud Signal Library</h3>
         <p>A structured reference library of fraud-detection signals — device, network, behavioural and transaction indicators used in fraud intelligence and risk architecture.</p>
-        <div class="tag-row"><span>Signal Taxonomy</span><span>Risk Architecture</span></div>
-        <div class="project-links" style="margin-top:1rem;">
-          <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ/fraud-signal-library" target="_blank" rel="noopener">Repository</a>
-        </div>
-      </div>
-
-      <div class="pub-card">
+        <div class="chips"><span>Signal taxonomy</span><span>Risk architecture</span></div>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ/fraud-signal-library" target="_blank" rel="noopener">Repository</a>
+      </article>
+      <article class="glass pub-card" data-reveal>
         <h3>Payment Fraud Analytics</h3>
         <p>A Hugo-powered site on payment fraud analytics, risk strategies and AI-driven prevention — a knowledge hub for fraud-detection dashboards and case studies.</p>
-        <div class="tag-row"><span>Payment Fraud</span><span>Analytics</span><span>Hugo</span></div>
-        <div class="project-links" style="margin-top:1rem;">
-          <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ/payment-fraud-hugo" target="_blank" rel="noopener">Repository</a>
-        </div>
-      </div>
-
-      <div class="pub-card">
+        <div class="chips"><span>Payment fraud</span><span>Analytics</span><span>Hugo</span></div>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ/payment-fraud-hugo" target="_blank" rel="noopener">Repository</a>
+      </article>
+      <article class="glass pub-card" data-reveal>
         <h3>Cancer Survival Prediction Companion</h3>
         <p>Applied ML and explainable-AI research translating fraud-investigation analytical methods into a clinical decision-support context — interpretability and responsible AI over black-box prediction.</p>
-        <div class="tag-row"><span>Explainable AI</span><span>Machine Learning</span><span>Research</span></div>
-        <div class="project-links" style="margin-top:1rem;">
-          <a class="btn btn-secondary btn-sm" href="https://github.com/Gururaj-GJ/Cancer-Survival-Prediction-Companion" target="_blank" rel="noopener">Repository</a>
-        </div>
-      </div>
-
+        <div class="chips"><span>Explainable AI</span><span>Machine learning</span><span>Research</span></div>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/Gururaj-GJ/Cancer-Survival-Prediction-Companion" target="_blank" rel="noopener">Repository</a>
+      </article>
     </div>
   </div>
 </section>
 
-<section id="education" style="background:#090e18;">
+<section id="education" class="section alt">
   <div class="container">
-    <h2>Education &amp; Certifications</h2>
-    <p class="section-sub">Background and training.</p>
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">06 — Foundation</span>
+      <h2>Education &amp; certifications</h2>
+      <p class="section-sub">Background and training.</p>
+    </div>
     <div class="two-col">
-      <div class="panel">
+      <div class="glass panel" data-reveal>
         <h3>Education</h3>
-        <ul>
-          <li><strong style="color:var(--text);">Master of Business Administration (MBA)</strong> — Marketing &amp; Human Resources</li>
-          <li>Presidency College (NAAC A+), Bangalore University · 2015–2017</li>
-          <li>Bengaluru, India</li>
-        </ul>
+        <div class="edu">
+          <strong>Master of Business Administration (MBA)</strong>
+          <span>Marketing &amp; Human Resources</span>
+          <span>Presidency College (NAAC A+), Bangalore University · 2015–2017</span>
+        </div>
       </div>
-      <div class="panel">
-        <h3>Certifications &amp; Training</h3>
-        <ul>
+      <div class="glass panel" data-reveal>
+        <h3>Certifications &amp; training</h3>
+        <ul class="cert-list">
           <li>PCI DSS Awareness</li>
           <li>Regulatory Compliance</li>
           <li>Financial Crime Prevention</li>
@@ -425,56 +493,47 @@
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="section">
   <div class="container">
-    <h2>Get in Touch</h2>
-    <p class="section-sub">Open to fraud investigation, AML/KYC, merchant-risk and trust &amp; safety roles in Bengaluru.</p>
-
-    <div class="about">
-      <div class="about-avatar"><img src="screenshots/profile.jpg" alt="Gururaj G J"></div>
-      <div class="about-text">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">07 — Contact</span>
+      <h2>Get in touch</h2>
+      <p class="section-sub">Open to fraud investigation, AML/KYC, merchant-risk and trust &amp; safety roles in Bengaluru.</p>
+    </div>
+    <div class="glass contact-card" data-reveal>
+      <div class="contact-avatar"><img src="screenshots/profile.jpg" alt="Gururaj G J"></div>
+      <div class="contact-text">
         <h3>Gururaj G J</h3>
         <div class="roles">Fraud Investigation · Transaction Laundering · Merchant Risk · AML/CFT · Trust &amp; Safety</div>
-        <p>
-          Bengaluru, India · Available immediately. Fraud investigation and financial-crime professional
-          who also builds explainable, open-source fraud-intelligence tooling.
-        </p>
-      </div>
-    </div>
-
-    <div style="margin-top:2.5rem;">
-      <h2 style="font-size:1.25rem;">Interested in</h2>
-      <div class="interest-tags">
-        <span>Fraud Investigation</span>
-        <span>Transaction Laundering</span>
-        <span>Merchant Risk</span>
-        <span>AML / KYC</span>
-        <span>Financial Crime</span>
-        <span>Trust &amp; Safety</span>
-        <span>Risk Analytics</span>
-      </div>
-      <p style="color:var(--muted); margin-bottom:1rem; font-size:0.95rem;">Let's connect.</p>
-      <div class="contact-actions">
-        <a class="btn btn-primary" href="mailto:gururaj.gj.guru@gmail.com">Email</a>
-        <a class="btn btn-secondary" href="https://www.linkedin.com/in/gururaj-gj-52a062b4" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-secondary" href="https://github.com/Gururaj-GJ" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-secondary" href="Gururaj-GJ-Resume.pdf" download>Download Resume</a>
+        <p>Bengaluru, India · Available immediately. Fraud investigation and financial-crime professional who also builds explainable, open-source fraud-intelligence tooling.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:gururaj.gj.guru@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/gururaj-gj-52a062b4" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Gururaj-GJ" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="Gururaj-GJ-Resume.pdf" download>Resume</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="container">
-    <p>Fraud Investigation · Transaction Laundering · Merchant Risk · AML/CFT · Trust &amp; Safety</p>
-    <div class="links">
+  <div class="container footer-inner">
+    <div class="footer-brand">Gururaj <em>G J</em></div>
+    <p class="footer-line">Fraud Investigation · Transaction Laundering · Merchant Risk · AML/CFT · Trust &amp; Safety</p>
+    <div class="footer-links">
       <a href="https://github.com/Gururaj-GJ" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/gururaj-gj-52a062b4" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:gururaj.gj.guru@gmail.com">Email</a>
     </div>
-    <p style="margin-top:1.25rem; font-size:0.8rem;">© 2026 Gururaj G J · Bengaluru, India</p>
+    <p class="footer-copy">© 2026 Gururaj G J · Bengaluru, India</p>
   </div>
 </footer>
 
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="app.js"></script>
 </body>
 </html>
